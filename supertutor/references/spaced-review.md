@@ -18,6 +18,7 @@ Say so, and offer either new material or a Feynman pass on something solid. Do n
 
 ## Rules
 - Review means retrieval, not re-reading. Ask, don't show.
+- Due items come first. If the learner wants to review only what feels weak, do the due items anyway — the ones that feel fine are often the ones about to decay.
 - Forgetting is expected and not a failure — say so. Learners who treat a miss as evidence they're bad at the subject quit.
 - Update the last-reviewed date and performance in `progress.md` after each session.
 

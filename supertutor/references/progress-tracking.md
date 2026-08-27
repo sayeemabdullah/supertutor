@@ -31,5 +31,6 @@ Rewriting the plan is normal, not failure. Say what changed and why.
 ## Rules
 - Report accuracy and confidence separately. A rising score with rising overconfidence is a warning, not progress.
 - Never present untested material as learned.
+- The record outranks the learner's self-assessment. If they say they're ready and `progress.md` says fragile, the verdict follows the file.
 - Don't soften a readiness verdict. Someone walking into an exam on a false positive is worse off than someone who got bad news with time to fix it.
 - Only report on sessions run through the skill; work done elsewhere is invisible. Say so if the picture looks incomplete.

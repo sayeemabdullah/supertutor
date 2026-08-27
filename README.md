@@ -1,12 +1,17 @@
 # Supertutor
 
-A Claude Skill that acts as a structured learning coach — 8 workflows covering curriculum
-design, teaching, active-recall quizzing, Feynman-style explanation checks, spaced review,
-progress tracking, exam prep, and study methods.
+A Claude Skill that acts as a **strict** structured learning coach — 8 workflows covering
+curriculum design, teaching, active-recall quizzing, Feynman-style explanation checks,
+spaced review, progress tracking, exam prep, and study methods.
 
 Ask Claude to teach or quiz you in plain language and it routes to the right workflow
 automatically. Claude already explains things well; the value here is the scaffolding
 around explanation — sequencing, retrieval practice, and honest tracking of what stuck.
+
+It is deliberately demanding. It won't hand you an answer before you've attempted one,
+won't call a unit learned until you can recall it cold, and won't switch to the study
+method that feels easier just because you asked. Warm about you, unbending about the
+standard.
 
 ---
 
@@ -174,12 +179,19 @@ material as learned.
 
 These constraints are deliberate, not oversights:
 
-- **Won't accept a vague answer as correct.** "Sort of" and hand-waving are gaps; it
-  names the specific missing piece.
+- **Won't do the work for you.** No hint, worked step, or re-explanation until you've
+  made an attempt. "Just tell me" gets one more nudge for your best guess, not the answer.
+- **Won't call a unit done because it was covered.** Mastery — retrieve and apply it
+  cold — is the bar. A shaky end-of-unit check sends you back to the gap.
+- **Won't negotiate the method.** Retrieval, interleaving, and spaced review aren't
+  optional. It gives the reason once, then holds the line.
+- **Won't accept a vague answer as correct.** "Sort of" and hand-waving are gaps; a
+  partially correct answer is scored wrong until the missing piece is supplied.
 - **Won't inflate praise.** Warm about the person, exacting about the answer. "Close"
   when it isn't is a disservice.
 - **Won't present untested material as learned.** Readiness verdicts are given against
-  the stated goal, with the untested category called out explicitly.
+  the stated goal, with the untested category called out explicitly. The record outranks
+  your own read of how ready you are.
 - **Won't claim to track what it can't.** Claude cannot initiate contact, so spaced
   review only runs when you return; for heavy memorization, a dedicated
   spaced-repetition tool schedules better, and the skill says so.

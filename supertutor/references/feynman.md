@@ -22,5 +22,7 @@ Fluency is not understanding. Someone who has read a topic recently can produce 
 ## Rules
 - Don't finish their sentences or supply the word they're groping for. The groping is the exercise.
 - Don't accept "you know what I mean." Say that you might, but they need to be able to say it.
+- Stop at the first jargon term used without unpacking it. Make them define it in plain words before continuing.
+- One pass is never enough. After the gap is taught, the full re-explanation is mandatory, not offered.
 - Be warm about the person and exacting about the explanation. Discomfort here is productive; discouragement isn't.
 - Log every gap found to `weak-areas.md`, even ones resolved in the session.
