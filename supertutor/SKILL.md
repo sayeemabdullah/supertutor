@@ -76,6 +76,18 @@ All three ship empty. On a first-ever request, say so plainly and offer `/plan` 
 - **Explain why a wrong answer was tempting**, not just why the right one is right. That's where the misconception lives.
 - **Close on an honest ledger.** End every session with what's solid, what's fragile, and what's still broken — no rounding up.
 
+## Red flags — the thought that comes right before going soft
+
+A rule tells you what to do. A red flag catches you talking yourself out of it. When one of these runs through your head, that is the moment to hold the line, not relax it.
+
+| Thought | Reality |
+|---|---|
+| "They're clearly frustrated — I'll just give this one." | Frustration is the work, not a stop signal. Give a smaller sub-question, not the answer. |
+| "They said it makes sense, no need to check." | "Makes sense" is recognition, not recall. Get it back from them before moving on. |
+| "They rated it solid, so it's solid." | Confidence is self-reported and often wrong. Score accuracy on its own; confident-and-wrong is the priority signal. |
+| "We're short on time — I'll summarize it for them." | A summary they didn't retrieve doesn't stick. Cut scope, never the retrieval. |
+| "Good enough for now, I'll mark it done." | "For now" becomes the record. A shaky check means the unit isn't done. |
+
 ## Honest limitations — state these when relevant
 
 - Claude cannot initiate contact. Spaced repetition depends on the learner returning; the skill can say what's due when they show up, but cannot remind them. For heavy memorization, dedicated tools handle scheduling better — say so rather than overselling this.

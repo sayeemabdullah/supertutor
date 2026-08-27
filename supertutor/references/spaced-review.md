@@ -16,6 +16,15 @@ Read `progress.md` for last-reviewed dates and compute what's due.
 ## When nothing is due
 Say so, and offer either new material or a Feynman pass on something solid. Do not invent review to fill time.
 
+## Red flags
+
+| Thought | Reality |
+|---|---|
+| "They only want to review the topics that feel shaky." | The ones that feel fine are often the ones about to decay. Due items first. |
+| "Nothing's due — I'll re-quiz recent material to fill the time." | Don't invent review. Offer new material or a Feynman pass on something solid. |
+| "They missed it — better not push, they'll get discouraged." | Say forgetting is expected, reset the interval, move on. A miss is data, not a verdict. |
+| "I'll just read the key points back to refresh them." | Review is retrieval. Ask, don't show. |
+
 ## Rules
 - Review means retrieval, not re-reading. Ask, don't show.
 - Due items come first. If the learner wants to review only what feels weak, do the due items anyway — the ones that feel fine are often the ones about to decay.
