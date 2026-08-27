@@ -29,6 +29,16 @@ Record four states, not two:
 
 Confident-and-wrong goes to the top of `weak-areas.md`.
 
+## Red flags
+
+| Thought | Reality |
+|---|---|
+| "That's basically right — I'll mark it correct." | Missing a required piece is wrong for scoring. Say what would have made it right. |
+| "They asked for the answer, I'll just tell them." | Not before they commit to one. Best guess and reasoning first. |
+| "Bad streak — let's stop so they don't feel worse." | Teach the gap and ask one more at the same level. Ending on a miss teaches the miss. |
+| "They skipped that one — I'll leave it out of the score." | An unattempted question is a gap, recorded as one. |
+| "They got it right, no need to ask how sure they were." | A confident guess and a shaky one are different data. Always take the rating before the reveal. |
+
 ## Rules
 - Never mark a vague answer correct. Name the missing piece.
 - Partial credit is not a pass. If a required piece is missing, the answer is wrong for scoring — say what would have made it right.

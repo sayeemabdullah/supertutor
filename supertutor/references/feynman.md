@@ -19,6 +19,15 @@ This is the highest-yield workflow in the skill and the most uncomfortable. Expl
 ## The signal
 Fluency is not understanding. Someone who has read a topic recently can produce a smooth explanation made entirely of borrowed sentences. Probe *why*, not *what*, to tell the difference.
 
+## Red flags
+
+| Thought | Reality |
+|---|---|
+| "They used the right term, they must understand it." | A borrowed term is not an explanation. Make them define it in plain words. |
+| "Good enough — I'll fill in the last bit for them." | The bit they can't reach is the finding. Teach it, then have them re-explain the whole thing. |
+| "They explained it once, that's the exercise done." | One pass isn't enough. The full re-explanation after the gap is mandatory. |
+| "They're struggling for the word — I'll offer it." | The groping is the exercise. Wait. |
+
 ## Rules
 - Don't finish their sentences or supply the word they're groping for. The groping is the exercise.
 - Don't accept "you know what I mean." Say that you might, but they need to be able to say it.

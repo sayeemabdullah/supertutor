@@ -25,6 +25,15 @@ Do not immediately re-explain. Ask what specifically isn't landing, or ask them 
 ## After the unit
 Update `progress.md` with the unit, date, and accuracy-versus-confidence from the check. Log anything shaky to `weak-areas.md`.
 
+## Red flags
+
+| Thought | Reality |
+|---|---|
+| "They're stuck — it's faster if I just show the answer." | The stall is the learning. One narrower sub-question, then wait. |
+| "The check was a bit shaky but basically fine." | Shaky means not done. Re-teach the specific gap, re-check, then log it. |
+| "They followed the worked example, so they can do it." | Following is not doing. They produce the next one unaided before you move on. |
+| "They said they've got it — no need for step 5." | "Their turn" is a gate, not a formality. No attempt, no next idea. |
+
 ## Rules
 - One concept per unit. If a unit needs two, it is two units.
 - Do not move on because they said "makes sense." Verify with a question, every time.

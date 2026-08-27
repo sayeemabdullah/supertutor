@@ -68,6 +68,26 @@ def table_commands(text):
     return re.findall(r"^\|\s*`(/[a-z]+)`\s*\|", text, re.M)
 
 
+def check_red_flags(label, text):
+    """A '## Red flags' section with >=2 data rows whose left cell is a quoted
+    thought. A rule that quietly stops firing looks identical to one that works;
+    naming the rationalization is what catches the violation."""
+    if "\n## Red flags" not in text:
+        fail(f"{label}: missing '## Red flags' section — naming the rationalization "
+             "is what catches the violation, not restating the rule")
+        return
+    block = text.split("\n## Red flags", 1)[1].split("\n## ", 1)[0]
+    rows = [l for l in block.splitlines()
+            if l.startswith("|") and not re.match(r"^\|[\s|:-]+\|?$", l)
+            and "Thought" not in l]
+    if len(rows) < 2:
+        fail(f"{label}: '## Red flags' has {len(rows)} row(s); needs at least 2")
+    for row in rows:
+        if '"' not in row.split("|")[1]:
+            fail(f"{label}: a Red flags row has no quoted thought — the left "
+                 "column must be the rationalization, verbatim")
+
+
 def main():
     if not os.path.isdir(REF_DIR):
         fail(f"missing {REF_DIR}")
@@ -82,6 +102,7 @@ def main():
         fail(f"references/ must contain exactly {EXPECTED_REF_COUNT} .md files, found {len(refs)}: {refs}")
 
     check_frontmatter(skill)
+    check_red_flags("SKILL.md", skill)
 
     # Every routing row (path in the last cell) must resolve to a real file.
     routed = re.findall(r"^\|.*\|\s*`references/([a-z-]+\.md)`\s*\|\s*$", skill, re.M)
@@ -109,6 +130,7 @@ def main():
             fail(f"{r}: exists but no routing row points at it, so it can never load")
         if "\n## Rules" not in text:
             fail(f"{r}: missing '## Rules' section — the pedagogy rules are the product, not boilerplate")
+        check_red_flags(r, text)
 
     # Slash commands: SKILL.md table and README table must match, in order.
     skill_cmds = table_commands(skill)
@@ -155,7 +177,8 @@ def main():
 
     print(f"checked {len(refs)} reference files "
           f"({len(workflow_refs)} workflow, {len(STATEFUL)} stateful), "
-          f"{len(routed)} routing rows, {len(skill_cmds)} slash commands")
+          f"{len(routed)} routing rows, {len(skill_cmds)} slash commands, "
+          f"Red flags tables in SKILL.md + {len(workflow_refs)} workflows")
 
 
 main()

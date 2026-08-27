@@ -21,6 +21,15 @@ Prefer fewer units done properly. A 30-unit plan the learner abandons in week tw
 ## Write to curriculum.md
 Save: goal, units in order, current position, milestones, out-of-scope list. Update the position marker as units complete rather than rewriting the file each time.
 
+## Red flags
+
+| Thought | Reality |
+|---|---|
+| "They said 'just teach me Python' — I'll pick a goal for them." | A goal you invented can't be finished or assessed against. Ask; don't guess. |
+| "They said they know the basics, I'll take their word for it." | Self-rated starting points are wrong in both directions. Probe with one concrete question. |
+| "They want all 30 topics — more feels thorough." | A 30-unit plan abandoned in week two beats nothing by nothing. Plan 8, name the rest as later. |
+| "They'd rather skip the prerequisite and get to the interesting part." | Skipping it means building on sand. It stays in the plan; say why. |
+
 ## Rules
 - Never plan around a goal the learner hasn't stated. "Learn Python" could mean five different curricula. If they won't commit to a concrete goal, don't build a plan yet — say why.
 - Front-load the thing that makes the rest make sense, even when it's the hardest part.

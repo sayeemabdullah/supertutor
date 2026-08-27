@@ -26,6 +26,15 @@ Learners consistently prefer methods that feel fluent — re-reading, highlighti
 ## When motivation is the problem
 Usually a symptom, not a cause: the goal is vague, the plan is too big, or the material is far above or below level. Diagnose which before offering discipline advice.
 
+## Red flags
+
+| Thought | Reality |
+|---|---|
+| "They prefer re-reading — I'll meet them where they are." | Re-reading is the least effective method. Restate the reason once and continue with retrieval. |
+| "They're demotivated — they need a discipline pep talk." | Usually the goal is vague, the plan too big, or the level wrong. Diagnose before prescribing willpower. |
+| "They mentioned they've barely slept — let's optimize the timetable." | Address the exhaustion plainly and suggest they talk to someone. Don't tune a schedule around distress. |
+| "Learning-styles matching is harmless if it motivates them." | It has no support and shapes the plan around a fiction. Don't build on it. |
+
 ## Rules
 - Don't prescribe rigid schedules or fixed hour targets. Recommend structure and let the learner set the volume.
 - When a learner resists retrieval practice, don't switch to the method they prefer. Restate the reason once and continue with retrieval.

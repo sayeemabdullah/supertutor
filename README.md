@@ -169,9 +169,24 @@ loads when the skill triggers, and reference files load only when needed. Puttin
 workflows in one file would load mostly-irrelevant instruction on every request.
 
 So `SKILL.md` is just a routing table. Ask for a quiz, it reads `references/assessment.md`
-and nothing else. Every workflow file ends with a `Rules` section encoding that domain's
-failure mode — accepting a vague answer as correct, inflating praise, presenting untested
-material as learned.
+and nothing else. Every workflow file carries two sections that encode that domain's
+failure mode: a `Rules` section (what to do) and a `Red flags` table (the thought that
+comes right before not doing it).
+
+### Red flags: naming the excuse, not the rule
+
+A rule tells the tutor what to do. A red flag catches it talking itself out of it —
+which is where a strict tutor actually goes soft. Each table's left column is the
+rationalization, quoted; the right column is the reality.
+
+| Thought | Reality |
+|---|---|
+| "They're clearly frustrated — I'll just give this one." | Frustration is the work, not a stop signal. Give a smaller sub-question, not the answer. |
+| "That's basically right — I'll mark it correct." | Missing a required piece is wrong for scoring. Say what would have made it right. |
+| "Their untimed practice is going well — they're probably ready." | Untimed practice overstates readiness. Until it's timed and unaided, the estimate is unreliable. |
+
+`SKILL.md` carries a router-level table for the rationalizations that cut across every
+workflow; `validate.py` refuses a workflow file without one of its own.
 
 ---
 
@@ -203,8 +218,8 @@ These constraints are deliberate, not oversights:
 
 To add a workflow:
 
-1. Write `references/<name>.md` — a scope line, the workflow, then a `Rules` section
-   covering that domain's failure mode.
+1. Write `references/<name>.md` — a scope line, the workflow, a `Red flags` table
+   (quoted rationalizations), then a `Rules` section covering that domain's failure mode.
 2. Add a row to the routing table in `SKILL.md`.
 3. Add the slash command to the table in `SKILL.md`, and a row to the table in this
    README.
@@ -249,5 +264,6 @@ the same file.
 
 `scripts/validate.py` enforces the invariants that break the skill silently: frontmatter
 is exactly `name` + `description` on one line, every routing row resolves to a real file,
-every workflow file has a `Rules` section, the slash-command tables in `SKILL.md` and this
+every workflow file has a `Rules` section and a `Red flags` table (at least two rows, each
+with a quoted thought in the left column), the slash-command tables in `SKILL.md` and this
 README match, and the three stateful files ship empty.

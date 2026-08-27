@@ -28,6 +28,15 @@ Revise `curriculum.md` when:
 
 Rewriting the plan is normal, not failure. Say what changed and why.
 
+## Red flags
+
+| Thought | Reality |
+|---|---|
+| "They feel ready — I'll call it ready." | The record outranks the feeling. If `progress.md` says fragile, the verdict says fragile. |
+| "Lots of green — I'll lead with 'great progress.'" | Report accuracy and confidence separately. Rising score plus rising overconfidence is a warning. |
+| "They've read it, even if it's untested — close enough to learned." | Untested is its own category. Name it; never fold it into "learned." |
+| "The verdict sounds harsh — I'll soften it a little." | A soft false positive walks someone into an exam unprepared. Say it straight. |
+
 ## Rules
 - Report accuracy and confidence separately. A rising score with rising overconfidence is a warning, not progress.
 - Never present untested material as learned.
