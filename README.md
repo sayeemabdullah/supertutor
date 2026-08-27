@@ -234,9 +234,11 @@ To add a workflow:
 
 **You never build, commit, or push `supertutor.skill`.** CI owns that file.
 
-Edit `supertutor/`, open a PR, and that's the whole job. CI rebuilds the archive, commits
-it to your branch, and it reaches `main` with your merge. Releases are built and published
-by CI too. `make hooks` installs a guard that stops the archive being staged by hand.
+Edit `supertutor/`, open a PR, and that's the whole job. CI rebuilds `supertutor.skill`
+from source and commits the refreshed copy — to your PR branch, or straight to `main` if
+it ever drifts there — so the `.skill` in the repo always matches `supertutor/`. Releases
+are built fresh and published by CI too. `make hooks` installs a guard that stops the
+archive being staged by hand.
 
 ```bash
 make hooks    # once — installs a pre-commit guard against hand-built archives
@@ -246,9 +248,12 @@ make skill    # rebuild locally to inspect; do not commit the result
 
 | When | What runs |
 |---|---|
-| Every PR | `validate.yml` — validates, rebuilds, and commits the archive to the PR branch if it's stale |
-| Push to `main` | Same workflow in verify-only mode; fails if `main`'s archive drifts from source |
-| Push a `v*` tag | `release.yml` — validates, builds, and attaches `supertutor.skill` to a GitHub Release |
+| Every PR | `validate.yml` — validates, rebuilds `supertutor.skill`, and commits it to the PR branch if it's stale |
+| Push to `main` | Same workflow; if `main`'s `supertutor.skill` drifts from source, it rebuilds and commits the fix straight to `main` |
+| Push a `v*` tag | `release.yml` — validates, builds the `.skill` fresh, and attaches `supertutor.skill` to a GitHub Release |
+
+Fork PRs get a read-only token and can't be auto-fixed — there the stale check fails
+loudly and a maintainer rebuilds on a branch.
 
 ### Cutting a release
 

@@ -16,7 +16,7 @@ jobs:
       - name: Validate skill structure
         run: python3 scripts/validate.py
 
-      - name: Build archive
+      - name: Build the .skill archive fresh from source
         run: ./scripts/build.sh
 
       - name: Publish release
