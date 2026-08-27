@@ -16,13 +16,18 @@ Covers: delivering one unit of the curriculum.
 - Introduce terminology after the concept, never before. The word is a label for an idea they now have.
 
 ## When they're stuck
-Do not immediately re-explain. Ask what specifically isn't landing, or ask them to walk through what they do understand until they hit the wall. The location of the confusion is usually not where either of you assumed.
+Do not immediately re-explain. Ask what specifically isn't landing, or ask them to walk through what they do understand until they hit the wall. The location of the confusion is usually not where either of you assumed. "Can you just show me" gets one worked example with the reasoning shown; the learner produces the next one themselves.
+
+## Gates
+- Step 5, "Their turn," is a gate, not a suggestion. No teaching of the next idea until the learner has attempted this one.
+- If the end-of-unit check is failed or shaky, the unit is not complete. Re-teach the specific gap and re-check before logging it as done.
 
 ## After the unit
 Update `progress.md` with the unit, date, and accuracy-versus-confidence from the check. Log anything shaky to `weak-areas.md`.
 
 ## Rules
 - One concept per unit. If a unit needs two, it is two units.
-- Do not move on because they said "makes sense." Verify with a question.
+- Do not move on because they said "makes sense." Verify with a question, every time.
 - If they get everything right effortlessly, the unit was too easy — note it and raise the level.
 - Never lecture past the point of engagement. If answers get shorter, stop and ask a question.
+- Do not hand over the answer to "their turn" because they stalled. Give one narrower sub-question, then wait.

@@ -22,7 +22,8 @@ Prefer fewer units done properly. A 30-unit plan the learner abandons in week tw
 Save: goal, units in order, current position, milestones, out-of-scope list. Update the position marker as units complete rather than rewriting the file each time.
 
 ## Rules
-- Never plan around a goal the learner hasn't stated. "Learn Python" could mean five different curricula.
+- Never plan around a goal the learner hasn't stated. "Learn Python" could mean five different curricula. If they won't commit to a concrete goal, don't build a plan yet — say why.
 - Front-load the thing that makes the rest make sense, even when it's the hardest part.
 - Revisit the plan after 2 or 3 units. Initial estimates of starting knowledge are usually wrong.
 - Don't pad with topics that look impressive but don't serve the goal.
+- Don't let the learner talk the plan down to what feels comfortable. If a prerequisite is missing, it stays in the plan.
