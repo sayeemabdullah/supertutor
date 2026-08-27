@@ -22,7 +22,7 @@ jobs:
       - name: Validate skill structure
         run: python3 scripts/validate.py
 
-      - name: Rebuild archive
+      - name: Rebuild the .skill archive from source
         run: ./scripts/build.sh
 
       - name: Did the archive change?
@@ -31,33 +31,32 @@ jobs:
           # --porcelain also catches the untracked case, which git diff misses
           if [ -z "$(git status --porcelain -- supertutor.skill)" ]; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
-            echo "archive is current"
+            echo "supertutor.skill is already up to date"
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
-            echo "archive is stale — rebuilt from source"
+            echo "supertutor.skill was stale — rebuilt from supertutor/"
           fi
 
-      # Same-repo PR: commit the rebuild onto the PR branch, so the artifact
-      # arrives on main through the normal merge and main stays PR-only.
-      - name: Commit rebuilt archive
-        if: >
-          steps.diff.outputs.changed == 'true' &&
-          github.event_name == 'pull_request' &&
-          github.event.pull_request.head.repo.full_name == github.repository
+      - name: Commit the refreshed .skill
+        if: steps.diff.outputs.changed == 'true'
+        env:
+          # PR from the same repo -> push to the PR branch.
+          # Push to main (post-merge, or a direct push) -> self-heal main.
+          # Fork PR -> read-only token, nothing to push; handled below.
+          IS_SAME_REPO_PR: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository }}
+          IS_MAIN_PUSH: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+          PR_BRANCH: ${{ github.event.pull_request.head.ref }}
         run: |
+          if [ "$IS_SAME_REPO_PR" != "true" ] && [ "$IS_MAIN_PUSH" != "true" ]; then
+            echo "::error::supertutor.skill does not match supertutor/, and this event can't push a fix (fork PR). A maintainer must run ./scripts/build.sh on a branch and merge it."
+            exit 1
+          fi
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add supertutor.skill
           git commit -m "chore: rebuild supertutor.skill"
-          git push origin "HEAD:${{ github.event.pull_request.head.ref }}"
-
-      # Fork PRs get a read-only token, and pushes to main are blocked by the
-      # protect-main ruleset. Neither can self-heal, so say so loudly.
-      - name: Report stale archive
-        if: >
-          steps.diff.outputs.changed == 'true' &&
-          !(github.event_name == 'pull_request' &&
-            github.event.pull_request.head.repo.full_name == github.repository)
-        run: |
-          echo "::error::supertutor.skill does not match supertutor/. A maintainer must run ./scripts/build.sh on a branch and merge it."
-          exit 1
+          if [ "$IS_SAME_REPO_PR" = "true" ]; then
+            git push origin "HEAD:${PR_BRANCH}"
+          else
+            git push origin "HEAD:main"
+          fi
