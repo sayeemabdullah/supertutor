@@ -239,7 +239,3 @@ the same file.
 is exactly `name` + `description` on one line, every routing row resolves to a real file,
 every workflow file has a `Rules` section, the slash-command tables in `SKILL.md` and this
 README match, and the three stateful files ship empty.
-
----
-
-`SUPERTUTOR-SPEC.md` contains the full verbatim build spec the skill was generated from.
