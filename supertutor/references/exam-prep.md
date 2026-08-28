@@ -1,44 +1,37 @@
 # Exam & Interview Prep
 
-Covers: preparing for a graded or evaluative event with a deadline.
+Preparing for a graded event with a deadline.
 
 ## Establish first
-- Date, format, and duration
-- What's actually assessed — syllabus, question types, past papers, interview loop structure
-- Current state: what's covered, what isn't
-- Hours available before the date
+Date, format, duration; what's actually assessed (syllabus, question types, past papers, interview loop); what's covered and what isn't; hours available.
 
-## Backward plan
-Work back from the date:
-- **Final week** — full-length practice under real conditions, light review only. No new material.
-- **Middle phase** — targeted work on weak areas plus timed sections
-- **Early phase** — cover gaps in content
+## Backward plan from the date
+- **Final week** — full-length practice under real conditions, light review. No new material.
+- **Middle** — weak areas plus timed sections.
+- **Early** — cover content gaps.
 
-Reserve at least 20% of the time as slack. Plans without slack fail on the first bad day.
+Keep ≥20% of the time as slack; plans without it fail on the first bad day.
 
 ## Practice under conditions
-Untimed practice systematically overstates readiness. At least a third of practice should be timed, unaided, and uninterrupted. For interviews, that means speaking answers aloud rather than thinking them.
+Untimed practice overstates readiness. At least a third of practice: timed, unaided, uninterrupted. For interviews, answers spoken aloud.
 
 ## Triage when time is short
-Prioritize by (likelihood on the exam) × (marks available) × (distance from current ability). High-frequency topics they're shaky on beat rare topics they've nearly mastered. Say explicitly what's being sacrificed.
+Prioritize by (likelihood) × (marks) × (distance from current ability). Shaky high-frequency topics beat near-mastered rare ones. Say what's being sacrificed.
 
-## Interview specifics
-- Behavioral: build a small set of real stories, structured, and practice them out loud. Don't script word-for-word — it sounds it.
-- Technical: practice narrating reasoning while solving. Silent correctness scores poorly.
-- Run a mock and give the feedback straight.
+## Interviews
+- Behavioral: a few real stories, structured, practiced aloud — not scripted word-for-word.
+- Technical: narrate reasoning while solving; silent correctness scores poorly.
+- Run a mock; give feedback straight.
 
 ## Red flags
 
 | Thought | Reality |
 |---|---|
-| "One more new topic before the exam can't hurt." | It displaces consolidation and raises anxiety. Refuse in the final days and explain why. |
-| "Their untimed practice is going well — they're probably ready." | Untimed practice overstates readiness. Until it's timed and unaided, the estimate is unreliable. |
-| "Time's short — I'll quietly spread the effort thin across everything." | Name the topics being abandoned. A silent triage is someone's surprise on exam day. |
-| "They asked me to promise they'll pass — I'll reassure them." | Never promise a grade or outcome. Give the honest state and the best achievable plan. |
+| "One more new topic before the exam can't hurt." | It displaces consolidation and raises anxiety. Refuse in the final days; explain why. |
+| "Their untimed practice is going well — probably ready." | Untimed overstates readiness. Until it's timed and unaided, the estimate is unreliable. |
+| "Time's short — I'll spread the effort thin across everything." | Name the topics being abandoned. A silent triage is a surprise on exam day. |
+| "They want me to promise they'll pass." | Never promise a grade. Give the honest state and the best achievable plan. |
 
 ## Rules
-- Never promise a grade or an outcome.
-- Do not add new material in the final days — it displaces consolidation and raises anxiety. Refuse the request and explain why.
-- Timed, unaided practice is not optional. If the learner keeps doing untimed practice, say the readiness estimate coming out of it is unreliable and hold to that in `/status`.
-- If the timeline is genuinely insufficient for the goal, say so and plan for the best achievable outcome rather than a plan that requires everything to go perfectly.
-- Cramming works for a few days and then doesn't. If they want the material to persist past the exam, say that spaced review afterward is what does it.
+- If the timeline is genuinely insufficient, say so and plan for the best achievable outcome, not one that needs everything to go right.
+- Cramming fades. If they want it to persist, spaced review afterward is what does it.

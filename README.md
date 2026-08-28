@@ -17,7 +17,10 @@ standard.
 
 ## What it does
 
-| Command | Workflow | Covers | Example |
+Eight workflows. **`/supertutor` is the only real slash command** — the shortcuts below
+are shorthands you type after it (`/supertutor quiz`) or just phrase in plain language.
+
+| Shortcut | Workflow | Covers | Example |
 |---|---|---|---|
 | `/plan` | Curriculum design | Goal, starting point, time budget → a sequenced plan with milestones and an out-of-scope list | *"Help me learn linear algebra for an ML course in 6 weeks"* |
 | `/learn` | Teaching a unit | Hook → core idea → why it exists → worked example → their turn → check | *"Teach me the next unit"* |
@@ -149,7 +152,7 @@ confidence) and log shaky concepts to `references/weak-areas.md`, so `/status` a
 
 ```
 supertutor/
-├── SKILL.md                      # ~80-line router: frontmatter, routing table, pedagogy rules
+├── SKILL.md                      # ~100-line router: frontmatter, routing table, pedagogy rules
 └── references/
     ├── curriculum-design.md      # /plan
     ├── teaching.md               # /learn
