@@ -1,31 +1,30 @@
 # Assessment & Quizzing
 
-Covers: active recall, testing, checking retention.
+Active recall, testing, checking retention.
 
 ## Before quizzing
-Read `weak-areas.md`. Weight the quiz toward known gaps and older material. Randomly sampling covered content wastes a session that could target what's actually broken.
+Read `weak-areas.md`. Weight toward known gaps and older material; random sampling wastes the session.
 
 ## Question mix
-- **Recall** — can they retrieve it cold
-- **Application** — can they use it on a case they haven't seen
-- **Transfer** — can they use it in a context from a different unit
-- **Discrimination** — can they tell it apart from the thing it's often confused with
+- **Recall** — retrieve it cold
+- **Application** — use it on an unseen case
+- **Transfer** — use it in another unit's context
+- **Discrimination** — tell it apart from what it's confused with
 
-Bias toward application and transfer. Pure recall over-reports understanding.
+Bias to application and transfer; pure recall over-reports understanding.
 
 ## Delivery
-- One question at a time. Never dump a set with an answer key — that converts a test into reading.
-- Ask for a **confidence rating** with each answer, before revealing the result.
-- If the learner says "I don't know," ask for their best guess and the reasoning behind it before revealing anything. A refusal to guess is scored as a gap and moves on.
-- After a wrong answer: explain why their answer was tempting, then why the correct one holds. The misconception is the target, not the fact.
-- After a right answer given with low confidence: reinforce it, and note that it's shakier than the score suggests.
+- One question at a time. No set with an answer key — that's reading, not testing.
+- Take a **confidence rating** before revealing the result.
+- On "I don't know," ask for a best guess and reasoning first; a refusal to guess scores as a gap and moves on.
+- After a wrong answer: why it was tempting, then why the right one holds. The misconception is the target.
+- After a low-confidence right answer: reinforce it, flag it as shakier than the score.
 
-## Scoring what matters
-Record four states, not two:
+## Scoring — four states, not two
 | | Confident | Unsure |
 |---|---|---|
-| **Correct** | Solid | Fragile — needs reinforcement |
-| **Wrong** | Dangerous — misconception, highest priority | Expected gap — normal, just teach it |
+| **Correct** | Solid | Fragile — reinforce |
+| **Wrong** | Misconception — highest priority | Expected gap — just teach it |
 
 Confident-and-wrong goes to the top of `weak-areas.md`.
 
@@ -33,17 +32,12 @@ Confident-and-wrong goes to the top of `weak-areas.md`.
 
 | Thought | Reality |
 |---|---|
-| "That's basically right — I'll mark it correct." | Missing a required piece is wrong for scoring. Say what would have made it right. |
-| "They asked for the answer, I'll just tell them." | Not before they commit to one. Best guess and reasoning first. |
-| "Bad streak — let's stop so they don't feel worse." | Teach the gap and ask one more at the same level. Ending on a miss teaches the miss. |
-| "They skipped that one — I'll leave it out of the score." | An unattempted question is a gap, recorded as one. |
-| "They got it right, no need to ask how sure they were." | A confident guess and a shaky one are different data. Always take the rating before the reveal. |
+| "That's basically right — mark it correct." | Missing a required piece is wrong for scoring. Say what would fix it. |
+| "They asked for the answer — I'll tell them." | Not before they commit. Best guess and reasoning first. |
+| "Bad streak — let's stop." | Teach the gap, ask one more at the same level. Ending on a miss teaches the miss. |
+| "They skipped it — leave it out of the score." | An unattempted question is a recorded gap. |
+| "Got it right — no need to ask how sure." | Confident and shaky are different data. Always rate before the reveal. |
 
 ## Rules
-- Never mark a vague answer correct. Name the missing piece.
-- Partial credit is not a pass. If a required piece is missing, the answer is wrong for scoring — say what would have made it right.
-- Do not reveal the answer before they commit to one, even if they ask.
-- No skipping. An unattempted question is scored as a gap, not passed over.
-- Don't inflate difficulty to seem rigorous, or deflate it to be encouraging. Calibrate to the goal.
-- If the learner asks to stop mid-wrong-streak, teach the gap and ask one more question at the same level before ending — closing on a miss teaches the miss.
+- Don't inflate difficulty to seem rigorous or deflate it to encourage. Calibrate to the goal.
 - Update `weak-areas.md` and `progress.md` after every quiz.

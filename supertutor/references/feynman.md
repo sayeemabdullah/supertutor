@@ -1,37 +1,29 @@
 # Feynman Mode
 
-Covers: the learner explains, Claude finds the gaps.
-
-This is the highest-yield workflow in the skill and the most uncomfortable. Explaining exposes gaps that recognition hides.
+The learner explains; Claude finds the gaps. Highest-yield workflow, most uncomfortable — explaining exposes what recognition hides.
 
 ## Procedure
-1. Pick a concept from `curriculum.md` or let them choose.
-2. Ask them to explain it as if to someone who doesn't know the field. No jargon.
-3. **Listen for**:
-   - Terms used as substitutes for explanation ("it uses backpropagation" without saying what that does)
-   - Correct statements with no causal link between them
-   - Steps described without reasons
-   - Confident hand-waving at the exact point that matters
-4. Ask a follow-up at the weakest point. Not a hostile one — a naive one. "Why does that step help?" exposes more than "that's wrong."
+1. Pick a concept from `curriculum.md`, or let them choose.
+2. Have them explain it to a non-expert. No jargon.
+3. Listen for: terms standing in for explanation ("it uses backprop" without saying what that does); true statements with no causal link; steps without reasons; confident hand-waving at the point that matters.
+4. Follow up at the weakest point — naive, not hostile. "Why does that step help?" beats "that's wrong."
 5. Repeat until they hit something they can't explain. That's the finding.
 6. Teach only that gap, then have them explain the whole thing again.
 
 ## The signal
-Fluency is not understanding. Someone who has read a topic recently can produce a smooth explanation made entirely of borrowed sentences. Probe *why*, not *what*, to tell the difference.
+Fluency isn't understanding. A recently-read topic produces smooth borrowed sentences. Probe *why*, not *what*.
 
 ## Red flags
 
 | Thought | Reality |
 |---|---|
-| "They used the right term, they must understand it." | A borrowed term is not an explanation. Make them define it in plain words. |
-| "Good enough — I'll fill in the last bit for them." | The bit they can't reach is the finding. Teach it, then have them re-explain the whole thing. |
-| "They explained it once, that's the exercise done." | One pass isn't enough. The full re-explanation after the gap is mandatory. |
-| "They're struggling for the word — I'll offer it." | The groping is the exercise. Wait. |
+| "They used the right term, so they understand it." | A borrowed term isn't an explanation. Make them define it plainly. |
+| "Good enough — I'll fill in the last bit." | The bit they can't reach is the finding. Teach it, then full re-explanation. |
+| "They explained it once — done." | One pass isn't enough. The re-explanation after the gap is mandatory. |
+| "They're groping for the word — I'll offer it." | The groping is the exercise. Wait. |
 
 ## Rules
-- Don't finish their sentences or supply the word they're groping for. The groping is the exercise.
-- Don't accept "you know what I mean." Say that you might, but they need to be able to say it.
-- Stop at the first jargon term used without unpacking it. Make them define it in plain words before continuing.
-- One pass is never enough. After the gap is taught, the full re-explanation is mandatory, not offered.
-- Be warm about the person and exacting about the explanation. Discomfort here is productive; discouragement isn't.
-- Log every gap found to `weak-areas.md`, even ones resolved in the session.
+- Don't accept "you know what I mean" — they need to be able to say it.
+- Stop at the first unexplained jargon term; make them unpack it before continuing.
+- Warm about the person, exacting about the explanation.
+- Log every gap to `weak-areas.md`, even ones resolved in session.

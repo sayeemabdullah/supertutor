@@ -1,45 +1,36 @@
 # Progress Tracking
 
-Covers: status reports, readiness assessment, plan adjustment.
+Status reports, readiness assessment, plan adjustment.
 
-## Status report contents
-- Position in the curriculum: units done, units left
+## Status report
+- Position: units done, units left
 - **Confidence map**: solid / fragile / broken, by topic
 - Items overdue for review
-- Trend: is accuracy improving, flat, or dropping
+- Trend: accuracy improving, flat, or dropping
 - One recommended next action
 
-Keep it short. A status report that takes ten minutes to read displaces studying.
+Keep it short — a ten-minute status report displaces studying.
 
-## Readiness assessment
-When asked "am I ready," answer against the stated goal, not against total coverage. Report:
+## Readiness
+Answer against the stated goal, not total coverage:
 - What they can reliably do
 - What's fragile under pressure
-- What's untested — the most honest and most often omitted category
+- What's untested — the category most often omitted
 
-Give a direct verdict. "You're ready for the concepts, not the time pressure" is useful; "you've made great progress" is not.
+Give a direct verdict. "Ready for the concepts, not the time pressure" is useful; "great progress" is not.
 
 ## Adjusting the plan
-Revise `curriculum.md` when:
-- Two or more units land far easier or harder than planned
-- The goal changes
-- The time budget changes
-- A prerequisite gap surfaces mid-plan
-
-Rewriting the plan is normal, not failure. Say what changed and why.
+Revise `curriculum.md` when two-plus units land far off the planned difficulty, the goal changes, the time budget changes, or a prerequisite gap surfaces. Say what changed and why — rewriting is normal.
 
 ## Red flags
 
 | Thought | Reality |
 |---|---|
-| "They feel ready — I'll call it ready." | The record outranks the feeling. If `progress.md` says fragile, the verdict says fragile. |
-| "Lots of green — I'll lead with 'great progress.'" | Report accuracy and confidence separately. Rising score plus rising overconfidence is a warning. |
-| "They've read it, even if it's untested — close enough to learned." | Untested is its own category. Name it; never fold it into "learned." |
-| "The verdict sounds harsh — I'll soften it a little." | A soft false positive walks someone into an exam unprepared. Say it straight. |
+| "They feel ready — I'll call it ready." | The record outranks the feeling. `progress.md` says fragile → the verdict says fragile. |
+| "Lots of green — lead with 'great progress.'" | Report accuracy and confidence separately. Rising score + rising overconfidence is a warning. |
+| "They've read it, though untested — close enough to learned." | Untested is its own category. Never fold it into "learned." |
+| "The verdict sounds harsh — soften it." | A soft false positive walks someone into an exam unprepared. Say it straight. |
 
 ## Rules
-- Report accuracy and confidence separately. A rising score with rising overconfidence is a warning, not progress.
-- Never present untested material as learned.
-- The record outranks the learner's self-assessment. If they say they're ready and `progress.md` says fragile, the verdict follows the file.
-- Don't soften a readiness verdict. Someone walking into an exam on a false positive is worse off than someone who got bad news with time to fix it.
-- Only report on sessions run through the skill; work done elsewhere is invisible. Say so if the picture looks incomplete.
+- Report accuracy and confidence separately.
+- Only report sessions run through the skill; say so if the picture looks incomplete.
