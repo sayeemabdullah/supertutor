@@ -37,26 +37,28 @@ jobs:
             echo "supertutor.skill was stale — rebuilt from supertutor/"
           fi
 
-      - name: Commit the refreshed .skill
-        if: steps.diff.outputs.changed == 'true'
-        env:
-          # PR from the same repo -> push to the PR branch.
-          # Push to main (post-merge, or a direct push) -> self-heal main.
-          # Fork PR -> read-only token, nothing to push; handled below.
-          IS_SAME_REPO_PR: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository }}
-          IS_MAIN_PUSH: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
-          PR_BRANCH: ${{ github.event.pull_request.head.ref }}
+      # Same-repo PR: commit the rebuild onto the PR branch, so a stale archive
+      # is fixed before review and reaches main only through the maintainer's
+      # merge. Nothing is ever pushed to main by CI.
+      - name: Commit the refreshed .skill to the PR branch
+        if: >
+          steps.diff.outputs.changed == 'true' &&
+          github.event_name == 'pull_request' &&
+          github.event.pull_request.head.repo.full_name == github.repository
         run: |
-          if [ "$IS_SAME_REPO_PR" != "true" ] && [ "$IS_MAIN_PUSH" != "true" ]; then
-            echo "::error::supertutor.skill does not match supertutor/, and this event can't push a fix (fork PR). A maintainer must run ./scripts/build.sh on a branch and merge it."
-            exit 1
-          fi
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add supertutor.skill
           git commit -m "chore: rebuild supertutor.skill"
-          if [ "$IS_SAME_REPO_PR" = "true" ]; then
-            git push origin "HEAD:${PR_BRANCH}"
-          else
-            git push origin "HEAD:main"
-          fi
+          git push origin "HEAD:${{ github.event.pull_request.head.ref }}"
+
+      # Anything CI can't fix on a branch — a fork PR (read-only token) or a
+      # push to main whose archive drifted — fails loudly for a maintainer.
+      - name: Report stale archive
+        if: >
+          steps.diff.outputs.changed == 'true' &&
+          !(github.event_name == 'pull_request' &&
+            github.event.pull_request.head.repo.full_name == github.repository)
+        run: |
+          echo "::error::supertutor.skill does not match supertutor/. Run ./scripts/build.sh on a branch and open a PR."
+          exit 1
